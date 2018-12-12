@@ -14,3 +14,7 @@ for which I wouldn't have to wait until the end to see the results
 ```
 $ hammerlet -r 10 -t http://localhost:8080
 ```
+
+```
+$ docker run mkmik/hammerlet -r 10 -t http://yourserver
+```
