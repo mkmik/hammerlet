@@ -16,7 +16,7 @@ import (
 
 var (
 	target  = flag.String("t", "http://localhost:8080", "target url")
-	rps     = flag.Int("r", 1, "request per second")
+	rps     = flag.Float64("r", 1, "request per second")
 	timeout = flag.Duration("timeout", 60*time.Second, "timeout")
 
 	listen = flag.String("l", ":6002", "listen for prometheus scrapes")
@@ -71,7 +71,7 @@ func hitE(httpClient *http.Client, u string) error {
 	return err
 }
 
-func run(target string, rps int, timeout time.Duration) error {
+func run(target string, rps float64, timeout time.Duration) error {
 	ctx := context.Background()
 	lim := rate.NewLimiter(rate.Limit(rps), 1)
 
