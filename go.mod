@@ -3,7 +3,7 @@ module github.com/mkmik/hammerlet
 go 1.17
 
 require (
-	github.com/prometheus/client_golang v1.12.0
+	github.com/prometheus/client_golang v1.12.1
 	golang.org/x/time v0.0.0-20220210224613-90d013bbcef8
 )
 
