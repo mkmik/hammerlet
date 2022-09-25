@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/prometheus/client_golang v1.12.2
-	golang.org/x/time v0.0.0-20220224211638-0e9765cccd65
+	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af
 )
 
 require (
